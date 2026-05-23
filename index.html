@@ -12,7 +12,6 @@
     --text-main: #F8FAFC;
 }
 
-/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-/* dots */
 body::after {
     content: "";
     position: fixed;
@@ -46,7 +44,6 @@ body::after {
     to { transform: translateY(-40px); }
 }
 
-/* 🔥 شفافية أقل + لون أغمق شوية (زي الواجهة بتاعتك) */
 .container {
     position: relative;
     z-index: 2;
@@ -54,7 +51,7 @@ body::after {
     margin: 80px auto 40px;
     padding: 30px;
 
-    background: rgba(30, 41, 59, 0.55); /* أقل شفافية من قبل */
+    background: rgba(30, 41, 59, 0.55);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 
@@ -63,7 +60,6 @@ body::after {
     box-shadow: 0 15px 50px rgba(0,0,0,0.35);
 }
 
-/* زر الترجمة */
 .lang-btn {
     position: fixed;
     top: 15px;
@@ -84,7 +80,6 @@ body::after {
     transform: scale(1.08);
 }
 
-/* 🔥 رجعنا ألوان النص الأصلية (مش أبيض صافي) */
 h1 {
     text-align: center;
     font-size: 32px;
@@ -99,7 +94,7 @@ h2 {
 }
 
 p {
-    color: #cbd5f5; /* نفس اللون اللي كان عندك */
+    color: #cbd5f5;
     font-size: 15px;
     margin-top: 5px;
 }
@@ -117,12 +112,10 @@ p {
     color: #94a3b8;
 }
 
-/* RTL */
 [dir="rtl"] {
     text-align: right;
 }
 
-/* mobile */
 @media (max-width: 480px) {
     .container {
         margin: 60px 15px 30px;
@@ -147,31 +140,31 @@ p {
 <h1 id="title">Privacy Policy | BLOCK PUZZLE</h1>
 
 <h2 id="h1">Introduction</h2>
-<p id="p1">BLOCK PUZZLE respects your privacy and is committed to protecting your personal information. This game is designed to provide a safe and secure experience without collecting any user data.</p>
+<p id="p1">BLOCK PUZZLE respects your privacy and is committed to protecting your personal information. The game is designed to provide a safe and enjoyable experience for all users.</p>
 
 <h2 id="h2">Information Collection</h2>
-<p id="p2">We do not collect, store, or share any personal data such as name, email, or device information. All gameplay data remains on your device only.</p>
+<p id="p2">We do not collect, store, or share any personal data such as name, email, or device information. All gameplay data remains stored locally on your device only.</p>
 
 <h2 id="h3">Data Processing</h2>
-<p id="p3">All processes within the game, including scores and progress, are handled locally without any external servers.</p>
+<p id="p3">All game processes, including scores and progress, are handled locally without external servers.</p>
 
 <h2 id="h4">Permissions</h2>
-<p id="p4">BLOCK PUZZLE does not request any permissions such as camera, storage, location, or microphone.</p>
+<p id="p4">The game does not request sensitive permissions such as camera, location, or microphone.</p>
 
 <h2 id="h11">Security</h2>
-<p id="p11">Since no data is collected or transmitted, your information remains fully secure on your device.</p>
+<p id="p11">Your data remains fully secure on your device since no personal information is collected or transmitted.</p>
 
 <h2 id="h5">Internet Usage</h2>
-<p id="p5">The game works completely offline and does not require an internet connection at any time.</p>
+<p id="p5">The core gameplay of BLOCK PUZZLE works offline and does not require an internet connection. However, an internet connection may be used in future updates for optional features such as advertisements, analytics, or additional services that improve the game experience. These features are not required to play the game.</p>
 
 <h2 id="h6">Third-Party Services</h2>
-<p id="p6">We do not use any third-party services such as analytics tools, advertising networks, or tracking systems.</p>
+<p id="p6">Currently, the game does not use third-party services. In future updates, we may integrate trusted third-party services such as advertising networks or analytics tools to support development and improve user experience. Any such services will comply with privacy regulations.</p>
 
 <h2 id="h7">Ads Policy</h2>
-<p id="p7">BLOCK PUZZLE does not contain any advertisements. Your experience is completely distraction-free.</p>
+<p id="p7">BLOCK PUZZLE currently contains no advertisements. In future updates, we may introduce non-intrusive ads to support ongoing development while keeping the game free for users.</p>
 
 <h2 id="h8">Children's Privacy</h2>
-<p id="p8">The game is safe for all ages and does not collect any personal information from children or adults.</p>
+<p id="p8">The game is suitable for all ages and does not intentionally collect any personal data from children or adults.</p>
 
 <h2 id="h10">Policy Updates</h2>
 <p id="p10">We may update this Privacy Policy from time to time. Any changes will be posted on this page.</p>
@@ -201,40 +194,39 @@ function toggleLang() {
 
         document.getElementById("title").innerText = "سياسة الخصوصية | BLOCK PUZZLE";
         document.getElementById("h1").innerText = "المقدمة";
-        document.getElementById("p1").innerText = "تحترم لعبة BLOCK PUZZLE خصوصيتك وتلتزم بحماية معلوماتك الشخصية. تم تصميم هذه اللعبة لتوفير تجربة آمنة دون جمع أي بيانات مستخدم.";
+        document.getElementById("p1").innerText = "تحترم لعبة BLOCK PUZZLE خصوصيتك وتلتزم بتوفير تجربة آمنة وممتعة لجميع المستخدمين.";
 
         document.getElementById("h2").innerText = "جمع المعلومات";
-        document.getElementById("p2").innerText = "نحن لا نجمع أو نخزن أو نشارك أي بيانات شخصية مثل الاسم أو البريد الإلكتروني أو معلومات الجهاز. جميع بيانات اللعب تبقى على جهازك فقط.";
+        document.getElementById("p2").innerText = "لا نقوم بجمع أو تخزين أو مشاركة أي بيانات شخصية. جميع بيانات اللعب تبقى على جهاز المستخدم فقط.";
 
         document.getElementById("h3").innerText = "معالجة البيانات";
-        document.getElementById("p3").innerText = "تتم جميع العمليات داخل اللعبة، بما في ذلك النتائج والتقدم، محلياً دون الحاجة إلى أي خوادم خارجية.";
+        document.getElementById("p3").innerText = "تتم جميع العمليات داخل اللعبة محلياً دون استخدام خوادم خارجية.";
 
         document.getElementById("h4").innerText = "الأذونات";
-        document.getElementById("p4").innerText = "لا تطلب لعبة BLOCK PUZZLE أي أذونات وصول مثل الكاميرا أو التخزين أو الموقع أو الميكروفون.";
+        document.getElementById("p4").innerText = "لا تطلب اللعبة أي أذونات حساسة مثل الكاميرا أو الموقع.";
 
         document.getElementById("h11").innerText = "الأمان";
-        document.getElementById("p11").innerText = "بما أنه لا يتم جمع أو إرسال بيانات، فإن معلوماتك تظل آمنة بالكامل على جهازك.";
+        document.getElementById("p11").innerText = "لا يتم جمع أي بيانات شخصية، وبالتالي تبقى معلوماتك آمنة بالكامل على جهازك.";
 
         document.getElementById("h5").innerText = "استخدام الإنترنت";
-        document.getElementById("p5").innerText = "تعمل اللعبة بالكامل بدون اتصال بالإنترنت ولا تتطلب الاتصال بالشبكة في أي وقت.";
+        document.getElementById("p5").innerText = "اللعبة تعمل بدون إنترنت في الأساس. ومع ذلك قد تتطلب بعض الميزات الاختيارية مثل الإعلانات أو التحليلات أو الخدمات المستقبلية اتصالاً بالإنترنت، وهي ليست ضرورية للعب.";
 
         document.getElementById("h6").innerText = "خدمات الطرف الثالث";
-        document.getElementById("p6").innerText = "نحن لا نستخدم أي خدمات تابعة لجهات خارجية مثل أدوات التحليل أو شبكات الإعلان أو أنظمة التتبع.";
+        document.getElementById("p6").innerText = "حالياً لا نستخدم أي خدمات خارجية، ولكن قد نضيف مستقبلاً خدمات إعلانات أو تحليلات لتحسين الأداء وتجربة المستخدم.";
 
         document.getElementById("h7").innerText = "سياسة الإعلانات";
-        document.getElementById("p7").innerText = "لا تحتوي لعبة BLOCK PUZZLE على أي إعلانات. تجربتك خالية تماماً من أي مصادر تشتيت.";
+        document.getElementById("p7").innerText = "حالياً لا توجد إعلانات داخل اللعبة، ولكن قد يتم إضافة إعلانات غير مزعجة في المستقبل لدعم التطوير.";
 
         document.getElementById("h8").innerText = "خصوصية الأطفال";
-        document.getElementById("p8").innerText = "اللعبة آمنة لجميع الأعمار ولا تجمع أي معلومات شخصية من الأطفال أو البالغين.";
+        document.getElementById("p8").innerText = "اللعبة مناسبة لجميع الأعمار ولا يتم جمع أي بيانات شخصية.";
 
         document.getElementById("h10").innerText = "تحديثات السياسة";
-        document.getElementById("p10").innerText = "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر وسيتم نشر التغييرات هنا.";
+        document.getElementById("p10").innerText = "قد يتم تحديث سياسة الخصوصية من وقت لآخر وسيتم نشر أي تغييرات هنا.";
 
         document.getElementById("h9").innerText = "تواصل معنا";
-        document.getElementById("p9").innerHTML = "إذا كان لديك أي أسئلة، تواصل معنا عبر:<br><b>m00481236@gmail.com</b>";
+        document.getElementById("p9").innerHTML = "لأي استفسار تواصل معنا عبر:<br><b>m00481236@gmail.com</b>";
 
         document.getElementById("footer").innerText = "© 2026 BLOCK PUZZLE - جميع الحقوق محفوظة";
-
     } else {
         location.reload();
     }
