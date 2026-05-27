@@ -1,0 +1,117 @@
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .section h2, .card h2 {
+    font-size: 24px;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+  .burger-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 72px; /* تعديل الارتفاع في الشاشات الصغيرة وتلقائياً يؤثر على السيادبار */
+  }
+
+  .header {
+    height: var(--header-height);
+    padding: 0 5%;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  /* أنميشن متناسق وناعم لعلامة الـ X */
+  .burger-menu.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .burger-menu.open span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+  }
+  .burger-menu.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+
+  .section, .card {
+    padding: 24px 0;
+  }
+
+  .section h2, .card h2 {
+    font-size: 22px;
+  }
+
+  .section p, .card p {
+    font-size: 14.5px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 65px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .section h2, .card h2 {
+    font-size: 19px;
+  }
+
+  .section p, .card p {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo {
+    font-size: 19px;
+  }
+  
+  .sidebar {
+    width: 220px;
+  }
+}
