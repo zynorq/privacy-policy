@@ -1,0 +1,15 @@
+:root {
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-glow: rgba(37, 99, 235, 0.15);
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --max-width: 900px;
+  --header-height: 75px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
